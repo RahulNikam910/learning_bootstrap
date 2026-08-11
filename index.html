@@ -13,7 +13,7 @@
 <body>
   <!-- Header Start Here -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/cafe.png" alt="Logo" width="30" height="24"
@@ -28,53 +28,70 @@
               <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house-door"></i>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html"><i class="bi bi-menu-button"></i>Menu</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i>About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+              <a class="nav-link" href="menu.html"><i class="bi bi-menu-button"></i>Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html"><i class="bi bi-gear"></i>Services</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location_hours.html"><i class="bi bi-geo-alt"></i>Location & Hours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="bi bi-telephone"></i>Contact</a>
+            </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
   </header>
   <!-- Header End Here -->
   <main>
-    <!-- slider section starts here -->
+    <!-- Carousel section starts here -->
     <section>
+      <!-- carousel-fade and data-bs-ride="carousel" -->
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
             aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
             aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
             aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="images/cafe 1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="images/Cafe 1.jpeg" class="d-block w-100" alt="Coffee and pastries served on a wooden cafe table">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Where Every Sip Meets a Delicious Bite</h5>
+              <p>Enjoy freshly brewed coffee and delightful bites in a warm and cozy atmosphere.</p>
+            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img src="images/Untitled - 08 August 2026 at 23.52.05.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/Breakfast.png" class="d-block w-100"
+              alt="Masala Dosa, Idli Chutney,Poha and Hot Tea served on wooden cafe table">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Start Your Day the Desi Way</h5>
+              <p>Enjoy delicious Indian breakfast favourites prepared fresh to give your morning a flavorful start.</p>
+            </div>
           </div>
-          <div class="carousel-item" data-bs-interval="1000">
-            <img src="images/cafe 2.png" class="d-block w-100" alt="...">
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/pasta.jpeg" class="d-block w-100" alt="Hot Spicy Pasta served on wooden cafe table">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Fresh Food, Made for Every Craving</h5>
+              <p>From comforting meals to quick bites, discover delicious food made to satisfy every appetite.</p>
+            </div>
           </div>
-          <div class="carousel-item " data-bs-interval="1000">
-            <img src="images/cafe 3.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="images/Cafe Interior.png" class="d-block w-100" alt="Warm and Cozy Cafe Interior">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Your Space to Relax, Work & Connect</h5>
+              <p>A cozy, Wi-Fi-friendly space where you can study, work, meet friends, or simply enjoy your coffee.</p>
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -89,6 +106,7 @@
         </button>
       </div>
     </section>
+    <!-- Carousel section ends here -->
     <!--About section starts here -->
     <section class="mt-5">
       <div class="container">
@@ -124,9 +142,9 @@
                 <h5 class="card-title">Hockey</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card’s content.</p>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hockey">
-  Read More..
-</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hockey">
+                  Read More..
+                </button>
 
               </div>
             </div>
@@ -139,9 +157,9 @@
                 <h5 class="card-title">Rahul</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                   card’s content.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rahul">
-  Read More..
-</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rahul">
+                  Read More..
+                </button>
 
 
               </div>
@@ -175,104 +193,112 @@
 
 
     <!-- modal hockey start -->
-     <!-- Modal -->
-<div class="modal fade" id="hockey" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Hokey</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-         <!-- slider section starts here -->
-    <section>
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="images/cafe 1.jpg" class="d-block w-100" alt="...">
+    <!-- Modal -->
+    <div class="modal fade" id="hockey" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Hokey</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/Untitled - 08 August 2026 at 23.52.05.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="images/cafe 2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item " data-bs-interval="3000">
-            <img src="images/cafe 3.jpeg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/cafe 1.jpg" class="img-fluid"/>
+          <div class="modal-body">
+            <!-- slider section starts here -->
+            <section>
+              <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="images/cafe 1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/Untitled - 08 August 2026 at 23.52.05.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="images/cafe 2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item " data-bs-interval="3000">
+                    <img src="images/cafe 3.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/cafe 1.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                  <h2>Hockey</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur
+                    itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste
+                    eveniet neque praesentium non maxime?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur
+                    itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste
+                    eveniet neque praesentium non maxime?</p>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <h2>Hockey</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste eveniet neque praesentium non maxime?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste eveniet neque praesentium non maxime?</p>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Rahul modal start -->
- <div class="modal fade" id="rahul" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Rahul</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="images/309-1200x500.jpg" class="img-fluid"/>
+    <!-- Rahul modal start -->
+    <div class="modal fade" id="rahul" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Rahul</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="images/309-1200x500.jpg" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                  <h2>Rahul</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur
+                    itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste
+                    eveniet neque praesentium non maxime?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur
+                    itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste
+                    eveniet neque praesentium non maxime?</p>
+                </div>
+              </div>
             </div>
-            <div class="col-md-6">
-              <h2>Rahul</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste eveniet neque praesentium non maxime?</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae incidunt doloribus consequuntur itaque amet, excepturi laudantium magnam, aspernatur, quam sit optio illo officia? Repellat iste eveniet neque praesentium non maxime?</p>
-            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
     </div>
-  </div>
-</div>
 
   </main>
 
