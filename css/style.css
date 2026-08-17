@@ -120,3 +120,54 @@ body {
 .offer-row:last-child{
     margin-bottom: none;
 }
+.offer-image{
+    width: 100%;
+    border: 1px solid var(--coffee-brown);
+    transition: transform 0.4s ease;
+}
+.offer-image:hover {
+    transform: scale(1.03);
+}
+.offer-price{
+    color: #3E302C;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+.offer-title{
+    color: #3E302C;
+    margin-bottom: 0.75rem;
+}
+.offer-combo{
+    color: #3E302C;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.site-footer{
+    background-color: var(--coffee-brown);
+    color: var(--cream);
+    padding: 30px 0px 20px;
+}
+.footer-link{
+    color: var(--cream);
+    text-decoration: none;
+    width: fit-content;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.footer-link:hover{
+    background-color: var(--cream);
+    color: var(--coffee-brown);
+    padding: 0px 8px;
+    border-radius: 4px;
+}
+.footer-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.footer-bottom {
+    border-top: 1px solid var(--cream);
+    padding-top: 15px;
+    margin-bottom: 0;
+    opacity: 0.85;
+}
