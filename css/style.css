@@ -171,3 +171,37 @@ body {
     margin-bottom: 0;
     opacity: 0.85;
 }
+.about-intro{
+    background-color: var(--cream);
+    padding: 3rem 0;
+}
+.about-intro h1{
+    margin-bottom: 1rem;
+}
+.about-story{
+    background-color: var(--cream);
+}
+.story-image{
+    width: 100%;
+    border: 2px solid var(--coffee-brown);
+    transition: transform 0.4s ease;
+}
+.story-image:hover{
+    transform: scale(1.02);
+}
+.about-story h2{
+    color: var(--coffee-brown);
+    margin-bottom: 1.25rem;
+}
+.about-special{
+    background-color: var(--cream);
+}
+.special-item {
+    padding: 1.5rem;
+    border: 1px solid var(--coffee-brown);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.special-items-row{
+    gap: 1rem;
+}
