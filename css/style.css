@@ -274,3 +274,74 @@ body {
     transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0,0,0,0.12);
 }
+.contact-intro{
+    background-color: var(--cream);
+    /* border-bottom: 1px solid var(--coffee-brown); */
+}
+.contact-form{
+    padding: 1.25rem;
+    border: 1px solid var(--coffee-brown);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.contact-form .form-label{
+    color: var(--coffee-brown);
+    font-weight: 600;
+}
+.contact-form .form-control{
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 0.65px 0.75px;
+}
+.contact-form .form-control:focus{
+    border-color: var(--coffee-brown);
+    box-shadow: 0 0 0 0.2rem rgba(111, 78, 55, 0.15);
+}
+.contact-submit {
+    background-color: var(--coffee-brown);
+    color: var(--cream);
+    border: 1px solid var(--coffee-brown);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contact-submit:hover {
+    background-color: var(--cream);
+    color: var(--coffee-brown);
+}
+.contact-reset {
+    background-color: var(--cream);
+    color: var(--coffee-brown);
+    border: 1px solid var(--coffee-brown);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.contact-reset:hover {
+    background-color: var(--coffee-brown);
+    color: var(--cream);
+}
+.contact-info h2{
+    color: var(--coffee-brown);
+    margin-bottom: 1.25rem;
+}
+.contact-info h5 {
+    color: var(--coffee-brown);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.contact-info p{
+    margin-bottom: 0.75rem;
+}
+.contact-info h5 i{
+    color: var(--coffee-brown);
+    margin-right: 0.4rem;
+}
+.contact-map{
+    width: 100%;
+    height: 400px;
+    border: 1px solid var(--coffee-brown) !important;
+    border-radius: 10px;
+}
