@@ -66,26 +66,32 @@
                 <div class="mb-3">
                   <label for="name" class="form-label">Enter Name</label>
                   <input type="text" class="form-control" id="name" placeholder="Enter Full Name">
+                  <span class="text-danger" id="nameError"></span>
                 </div>
 
                 <div class="mb-3">
                   <label for="email" class="form-label">Enter Email</label>
                   <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                  <span class="text-danger" id="emailError"></span>
                 </div>
                 <div class="mb-3">
                   <label for="phone" class="form-label">Enter Phone Number</label>
                   <input type="tel" class="form-control" id="phone" placeholder="Enter Phone Number">
+                  <span class="text-danger" id="phoneError"></span>
                 </div>
                 <div class="mb-3">
                   <label for="subject" class="form-label">Subject</label>
                   <input type="text" class="form-control" id="subject" placeholder="Enter Subject">
+                  <span class="text-danger" id="subjectError"></span>
                 </div>
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
                   <textarea class="form-control" id="message" rows="4" placeholder="Enter your message here"></textarea>
+                  <span class="text-danger" id="messageError"></span>
                 </div>
                 <div class="mb-3">
                   <button type="submit" class="btn contact-submit">Submit</button>
+                  <div id="successMessage" class="text-success mb-3"></div>
                   <button type="reset" class="btn contact-reset">Reset</button>
                 </div>
               </div>
@@ -117,6 +123,7 @@
           </div>
           <div class="container">
             <div class="row gy-3">
+              <h1>Visit Us</h1>
               <div class="col-12">
                 <iframe class="contact-map"
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30246.810846458575!2d73.859072!3d18.6257544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1786851168840!5m2!1sen!2sin"
